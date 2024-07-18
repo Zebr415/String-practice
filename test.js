@@ -1,5 +1,5 @@
 function stringFormatter(str) {
-  str = str.replace(/^([a-zA-Z]*)(\d* |\d*\.?\d+)$/g, "$2");
+  let numberPart = str.replace(/^([a-zA-Z]*)(\d* |\d*\.?\d+)$/g, "$2");
   const dotIndex = numberPart.indexOf('.');
 
   if (dotIndex !== -1) {
